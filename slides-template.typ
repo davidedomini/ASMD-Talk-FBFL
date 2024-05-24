@@ -5,7 +5,6 @@
 
 #show: metropolis-theme.with(
   aspect-ratio: "16-9",
-  footer: [Optional Footnote]
 )
 
 #set text(font: "Inter", weight: "light", size: 20pt)
@@ -35,17 +34,6 @@
   author: author,
   //date: datetime.today().display("[day] [month repr:long] [year]"),
 )
-
-#slide(title: "About me")[
-  - Education
-    - MSc (2023) and BSc (2021) in Computer Science and Engineering
-  - Main research areas
-    - Multi Agent Reinforcement Learning 
-      - ScaRLib @DominiCAV23
-    - Personalization in Federated Learning
-      - #underline[*Field-based Coordination for Federated Learning*]
-]
-
 
 #new-section-slide("Background on Federated Learning")
 
@@ -191,6 +179,29 @@
 
  #adv Exploits spatial distribution of the devices
 
+]
+
+#new-section-slide("Proximity-based Self-FL")
+
+#slide(title: "Scenario (?)")[
+  //#table(inset: 1em, stroke: none, columns: (1fr, 1fr), align: (left, left),
+  #table(inset: (0.3em, 0.5em), stroke: none, columns: (2fr, 2fr, 2fr), align: (center, center),
+      [
+        #figure(
+          image("imgs/zones.svg", width: 112%)
+        )
+      ],
+      [
+        #figure(
+          image("imgs/zones2.svg", width: 112%)
+        )
+      ],
+      [
+        #figure(
+          image("imgs/zones3.svg", width: 112%)
+        )
+      ]  
+  )
 ]
 
 #new-section-slide("Future Work")
