@@ -216,7 +216,30 @@
 
 
 #slide(title: "Formalization")[
-  - An area $ A = {a_1, a_2, ..., a_n}$
+  - An area $ A = {a_1, a_2, ..., a_k}$
+  - A local distribution $Theta_i$ unique to each sub-area $a_i$
+  - A dissimilarity metric $m"(" d_i, d_j ")"$ such that:
+   - $forall i != j, forall d, d quote.r.single in Theta_i, forall d quote.r.single quote.r.single in Theta_j "holds" m"(" d, d quote.r.single ")" <= delta  <  m"(" d, d quote.r.single quote.r.single ")"$
+  - A set of sensor nodes $ S = {s_1, s_2, ..., s_n}$ such that $n >> |A|$
+  - Each sensor $s_i$ has:
+    - a position $p_i"("x_i, y_i")"$
+    - a communication range $r_c$
+  - A local dataset $D_i tilde.op Theta_j space forall s_i$
+
+]
+
+#slide(title: "Dissimilarity metric (I)")[
+
+  #figure(
+    image("imgs/dissimilarity.svg", width: 100%)
+  )
+]
+
+#slide(title: "Dissimilarity metric (II)")[
+
+  #figure(
+    image("imgs/metric.svg", width: 45%)
+  )
 ]
 
 
@@ -237,14 +260,35 @@
 
 ]
 
+#slide(title: "Alchemist simulation")[
+  //#table(inset: 1em, stroke: none, columns: (1fr, 1fr), align: (left, left),
+  #table(inset: (0.3em, 0.5em), stroke: none, columns: (2fr, 2fr, 2fr), align: (center, center),
+      [
+        #figure(
+          image("imgs/snapshot-1.png", width: 100%)
+        )
+      ],
+      [
+        #figure(
+          image("imgs/snapshot-2.png", width: 103%)
+        )
+      ],
+      [
+        #figure(
+          image("imgs/snapshot-3.png", width: 100%)
+        )
+      ]  
+  )
+]
 
 
 #new-section-slide("Future Work")
 
 #slide(title: "What's next?")[
   - More exploration with non-iid data
-  - Space fluidity
+  - Continual learning
   - Sparse neural networks for low resource settings
+  - Knowledge fertilization
 ]
 
 #slide[
