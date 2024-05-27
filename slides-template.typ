@@ -105,6 +105,15 @@
   )
 ]
 
+#slide(title: "Data heterogeneity")[
+  - In real life, data are often #underline[non-independently and identically distributed]
+  - Example: differences in UK-US slang
+  - A possible categorization:
+    - Feature skew
+    - Label skew
+    - Quantity skew
+]
+
 #slide(title: "How can we address data heterogeneity?")[
   - Adding a regularization term to classic FL algorithms @scaffold @fedprox
   - #underline[*Personalized*] Federated Learning
@@ -116,15 +125,15 @@
 
 #new-section-slide("Field based coordination for Federated Learning")
 
-#slide(title: "Why field based coordination?")[
-  - Global-level system behaviour captured declaratively 
+// #slide(title: "Why field based coordination?")[
+//   - Global-level system behaviour captured declaratively 
 
-  - Seamlessly transition between fully centralized and fully decentralized aggregation methods
+//   - Seamlessly transition between fully centralized and fully decentralized aggregation methods
 
-  - Coordination mechanisms to take into account spatial distribution of devices
+//   - Coordination mechanisms to take into account spatial distribution of devices
   
-  - Benefits of semantically similar knowledge among nearby devices
-]
+//   - Benefits of semantically similar knowledge among nearby devices
+// ]
 
 
 #slide(title: "Full peer-to-peer learning")[
@@ -142,11 +151,12 @@
 
 #slide(title:"SCR Pattern for Federated Learning")[
 
-    #figure(
-      image("imgs/FL-SCR.svg", width: 110%)
-    )
+  #figure(
+    image("imgs/FL-SCR.svg", width: 110%)
+  )
  
 ]
+
 
 #slide(title: "Learning in zones")[
   ```scala
@@ -183,7 +193,7 @@
 
 #new-section-slide("Proximity-based Self-FL")
 
-#slide(title: "Scenario (?)")[
+#slide(title: "Scenario")[
   //#table(inset: 1em, stroke: none, columns: (1fr, 1fr), align: (left, left),
   #table(inset: (0.3em, 0.5em), stroke: none, columns: (2fr, 2fr, 2fr), align: (center, center),
       [
@@ -203,6 +213,31 @@
       ]  
   )
 ]
+
+
+#slide(title: "Formalization")[
+  - An area $ A = {a_1, a_2, ..., a_n}$
+]
+
+
+#slide(title: "Proposed algorithm overview")[
+
+  #figure(
+    image("imgs/proposed_algorithm.png", width: 100%)
+  )
+
+]
+
+
+#slide(title: "Inside the sparse choice")[
+
+  #figure(
+    image("imgs/regions_formation.png", width: 70%)
+  )
+
+]
+
+
 
 #new-section-slide("Future Work")
 
