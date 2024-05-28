@@ -43,6 +43,12 @@
   )
 ]
 
+#slide(title: "Traditional ML training loop")[
+  #figure(
+    image("imgs/classic-ml.png", width: 48%)
+  )
+]
+
 #slide(title: "Example: Google Virtual Keyboard")[
   #table(inset: 1em, stroke: none, columns: (1fr, 1fr), align: (left, left),
     [
