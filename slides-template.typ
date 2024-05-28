@@ -179,6 +179,28 @@
   ```
 ]
 
+
+
+#slide(title: "Experiment: Air Quality Prediction ")[
+
+  #table(inset: 1em, stroke: none, columns: (1fr, 1fr), align: (left, left),
+    [
+      #figure(
+        image("imgs/concentration.png", width: 120%)
+      )
+
+    ],
+    [
+      #figure(
+        image("imgs/pm10-stations-deploy-alchemist.png", width: 95%)
+      )
+
+    ]  
+  )
+
+]
+
+
 #let adv = box[ #figure(
     image("imgs/checkmark.svg", width: 2%)
   )]
